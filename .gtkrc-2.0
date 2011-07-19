@@ -1,0 +1,7 @@
+style "font"
+{
+font_name="hlv 9"
+}
+widget_class "*" style "font"
+gtk-font-name="hlv 9"
+include ".tangoish-gtkrc"

@@ -1,0 +1,39 @@
+bind c exec uxterm
+bind grave exec xset dpms force off
+bind asciitilde exec ratpoison -c "echo `RawStats`"
+bind C-q only
+bind t meta
+definekey top C-f fselect
+#definekey top C-9 nextscreen
+definekey top C-8 nextscreen
+definekey top C-9 other
+definekey top C-semicolon colon exec 
+definekey top s-Tab focus
+set font fixed-11
+set bgcolor rgb:e/e/e
+set fgcolor black
+set bargravity c
+#set winname class
+set border 1
+set framesels uhetonasgpcrlmwv
+rudeness 4 
+msgwait 5
+newkmap gps
+bind C-g readkey gps
+bind t focuslast
+definekey gps question help gps
+definekey gps n gnewbg
+definekey gps m gmove
+definekey gps M gmerge
+definekey gps g gother
+definekey gps C-g groups
+definekey gps t gselect
+definekey gps 1 gselect 1
+definekey gps 2 gselect 2
+definekey gps 3 gselect 3
+definekey gps 4 gselect 4
+definekey gps 5 gselect 5
+definekey gps 0 gselect 0
+exec wmname LG3D
+exec /usr/local/bin/rpws init 4 -k
+bind bracketright exec sh -c 'mpd pause; xscreensaver-command -lock'

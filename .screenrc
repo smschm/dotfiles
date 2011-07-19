@@ -1,0 +1,8 @@
+hardstatus alwayslastline
+#hardstatus string '%{= gk}%-Lw%{= kG}%50>%n%f* %t%{= gk}%+Lw%< %{= kG}%-=%d %M %c%{-}'
+hardstatus string '%{= dd}%-Lw%{=b}%50>(%n)%{= dd}%+Lw%< %-=%d %M %c%{-}'
+caption string '%3n %t'
+bell_msg ""
+escape ^Gg
+vbell off
+bind s windowlist -b

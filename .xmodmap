@@ -1,0 +1,7 @@
+remove lock = Caps_Lock
+remove Control = Control_L
+keysym Control_L = Caps_Lock
+keysym Caps_Lock = Control_L
+add Control = Control_L
+keycode 0x25 = Escape
+clear lock
