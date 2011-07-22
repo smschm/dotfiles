@@ -18,10 +18,11 @@ compinit
 export PAGER=most
 alias caevnc="ssh -L 5900:localhost:5961"
 alias h="ls -FG"
-alias a="ls -FGrtl"
+alias a="ls -FGrtl --color=always"
 alias se="screen vim"
 alias c="pushd"
 alias T="tmux neww"
+alias skype="LD_PRELOAD=/usr/lib32/libv4l/v4l1compat.so skype"
 alias -g M="| less"
 alias -g MM="|& less"
 alias todo="cd ~/todo; vim todo"
@@ -88,6 +89,7 @@ case $HOST in
 	etienne)
 		PC="" #${fg[green]}
 		alias tmux="tmux -2"
+		eval `keychain --eval -q id_rsa`
 	;;
 	ir*)
 		PC="${fg[red]}${HOST[(ws:.:)1]}:"

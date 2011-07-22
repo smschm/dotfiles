@@ -1,7 +1,7 @@
 style "font"
 {
-font_name="hlv 9"
+font_name="Frutiger LT 47 LightCn 10"
 }
 widget_class "*" style "font"
-gtk-font-name="hlv 9"
-include ".tangoish-gtkrc"
+gtk-font-name="Frutiger LT 47 LightCn 10"
+include ".murrine-gtkrc"
