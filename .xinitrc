@@ -39,7 +39,7 @@ case $WM in
 		xmonad
 	;;
 	ratpoison)
-		ratpoison
+		ratpoison | tee ~/ratpoison-messages
 	;;
 	ratpoison-lab)
 		xrandr --output LVDS --mode 1280x800
