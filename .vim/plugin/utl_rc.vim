@@ -281,12 +281,12 @@ let utl__file_rc =    expand("<sfile>")	    " Do not remove this line
 
     "						[id=utl_cfg_hdl_mt_application_pdf__acrobat] {
     "let g:utl_cfg_hdl_mt_application_pdf__acrobat="call Utl_if_hdl_mt_application_pdf_acrobat('%P', '%f')"
-    "if !exists("g:utl_cfg_hdl_mt_application_pdf")
+    if !exists("g:utl_cfg_hdl_mt_application_pdf")
     "	     let g:utl_cfg_hdl_mt_application_pdf = g:utl_cfg_hdl_mt_application_pdf__acrobat
     "
     "		Linux/KDE
-    "	     let g:utl_cfg_hdl_mt_application_pdf = ':silent !acroread %p &'
-    "endif
+    	     let g:utl_cfg_hdl_mt_application_pdf = ':silent !xpdf %p &'
+    endif
     "}
 
 
