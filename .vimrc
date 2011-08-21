@@ -7,13 +7,17 @@
 :set encoding=utf-8
 :set foldmethod=marker
 :set t_Co=256
+:set expandtab
 ":colorscheme eclipse
 ":colorscheme lucius
-:colorscheme sienna
+":colorscheme sienna
+":colorscheme silent
+:colorscheme print_bw
 :set formatoptions=1
 :set lbr
 :set nocompatible
 :set modeline
+:set guioptions-=T
 ":filetype plugin indent on
 :set hid
 ":nnoremap j gj
@@ -22,7 +26,7 @@
 ":vnoremap k gk
 ":set number
 ":colorscheme delek
-:set guifont="Lucida Sans Typewriter-10"
+:set guifont=Lucida\ Sans\ Typewriter\ 10
 :map <F2> <Esc>:read !date "+\%d\%b\%y \%H\%M>"<Esc>$a 
 :imap <F2> <Esc><F2>
 :map <F3> <Esc>:read !ke<Esc>$a 

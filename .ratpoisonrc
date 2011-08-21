@@ -1,26 +1,28 @@
 bind c exec uxterm
 bind grave exec xset dpms force off
-bind asciitilde exec ratpoison -c "echo `RawStats`"
+#bind asciitilde exec ratpoison -c "echo `RawStats`"
 bind C-q only
 bind t meta
 definekey top C-f fselect
 #definekey top C-9 nextscreen
-definekey top C-8 nextscreen
-definekey top C-9 other
+#definekey top C-8 nextscreen
+#definekey top C-9 other
 definekey top C-semicolon colon exec 
 definekey top s-Tab focus
+bind C-t focuslast
+bind o other
 set font fixed-11
 set bgcolor rgb:e/e/e
 set fgcolor black
 set bargravity c
 #set winname class
-set border 1
+set border 0
 set framesels uhetonasgpcrlmwv
 rudeness 4 
 msgwait 5
 newkmap gps
 bind C-g readkey gps
-bind t focuslast
+#bind t focuslast
 definekey gps question help gps
 definekey gps n gnewbg
 definekey gps m gmove
