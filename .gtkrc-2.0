@@ -1,7 +1,7 @@
 style "font"
 {
-font_name="Frutiger LT 47 LightCn 10"
+font_name="Lucida Sans 9"
 }
 widget_class "*" style "font"
-gtk-font-name="Frutiger LT 47 LightCn 10"
+gtk-font-name="Lucida Sans 9"
 include ".murrine-gtkrc"

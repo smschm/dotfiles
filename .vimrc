@@ -18,6 +18,7 @@
 :set nocompatible
 :set modeline
 :set guioptions-=T
+:set errorformat=
 ":filetype plugin indent on
 :set hid
 ":nnoremap j gj
